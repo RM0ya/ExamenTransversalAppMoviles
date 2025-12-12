@@ -1,4 +1,4 @@
-package com.example.pasteleriakotlin.JunitTest
+package com.example.pasteleriakotlin
 
 import com.example.pasteleriakotlin.model.Usuario
 import org.junit.Assert.assertEquals
@@ -13,7 +13,7 @@ class UsuarioTest {
             contrasena = "1234"
         )
 
-        // Como el id es autoGenerate = true, por defecto debe empezar en 0
+    
         assertEquals(0, usuario.id)
         assertEquals("Kevin", usuario.nombre)
         assertEquals("1234", usuario.contrasena)
