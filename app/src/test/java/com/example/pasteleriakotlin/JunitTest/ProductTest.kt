@@ -1,4 +1,4 @@
-package com.example.pasteleriakotlin.JunitTest
+package com.example.pasteleriakotlin
 
 import com.example.pasteleriakotlin.model.Product
 import org.junit.Assert.assertEquals
