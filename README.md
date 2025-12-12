@@ -99,5 +99,5 @@ La app móvil también puede consumir un backend propio desarrollado en **Spring
 5.2 Clonar el repositorio
 
 bash
-git clone (https://github.com/RM0ya/EjemploRoom1.git)
-cd EjemploRoom1
+git clone (https://github.com/RM0ya/EjemploRoom1.git)](https://github.com/RM0ya/ExamenTransversalAppMoviles.git)
+cd ExamenTransversalAppMoviles
