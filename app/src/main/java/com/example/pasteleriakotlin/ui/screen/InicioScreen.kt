@@ -100,21 +100,6 @@ fun InicioScreen(navController: NavController) {
 
             Spacer(modifier = Modifier.height(32.dp))
 
-
-            Card(
-                modifier = Modifier.fillMaxWidth(),
-                colors = CardDefaults.cardColors(containerColor = Color(0xFFF5EAD3)),
-                shape = RoundedCornerShape(12.dp)
-            ) {
-            }
-            MenuButton(
-                text = "Pestaña Backend",
-                backgroundColor = Color(0xFFAD812C),
-                icon = Icons.Filled.Build,
-                onClick = { navController.navigate("backendLogin") }
-            )
-
-
             Card(
                 modifier = Modifier.fillMaxWidth(),
                 colors = CardDefaults.cardColors(containerColor = Color(0xFFF5EAD3)),
