@@ -14,10 +14,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavController
 import com.example.pasteleriakotlin.data.ViewModelsApi.BackendLoginViewModel
 
 @Composable
 fun BackendLoginScreen(
+    navController: NavController,
     backendLoginViewModel: BackendLoginViewModel = viewModel()
 ) {
     val nombreState = remember { mutableStateOf("") }
@@ -63,6 +65,12 @@ fun BackendLoginScreen(
         }
 
         Spacer(modifier = Modifier.height(16.dp))
+        Button(
+            onClick = { navController.popBackStack() },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Salir")
+        }
 
         if (loading) {
             CircularProgressIndicator()

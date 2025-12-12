@@ -5,6 +5,8 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Build
+import androidx.compose.material.icons.filled.Coffee
 import androidx.compose.material.icons.filled.Login
 import androidx.compose.material.icons.filled.PersonAdd
 import androidx.compose.material.icons.filled.ShoppingBag
@@ -97,6 +99,20 @@ fun InicioScreen(navController: NavController) {
             )
 
             Spacer(modifier = Modifier.height(32.dp))
+
+
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                colors = CardDefaults.cardColors(containerColor = Color(0xFFF5EAD3)),
+                shape = RoundedCornerShape(12.dp)
+            ) {
+            }
+            MenuButton(
+                text = "Pestaña Backend",
+                backgroundColor = Color(0xFFAD812C),
+                icon = Icons.Filled.Build,
+                onClick = { navController.navigate("backendLogin") }
+            )
 
 
             Card(

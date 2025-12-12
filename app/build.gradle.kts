@@ -9,11 +9,7 @@ plugins {
 android {
     namespace = "com.example.pasteleriakotlin"
     compileSdk = 36
-    testOptions {
-        unitTests.all {
-            it.useJUnitPlatform()
-        }
-    }
+
     defaultConfig {
         applicationId = "com.example.ejemploroom"
         minSdk = 24
@@ -65,7 +61,7 @@ dependencies {
     implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.navigation.compose)
 
-
+    testImplementation("junit:junit:4.13.2")
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
     kapt("androidx.room:room-compiler:2.6.1")
@@ -77,8 +73,7 @@ dependencies {
     testImplementation(libs.junit)
 
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.11.0")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.11.0")
+    
 
 
     testImplementation("io.kotest:kotest-runner-junit5:5.9.1")

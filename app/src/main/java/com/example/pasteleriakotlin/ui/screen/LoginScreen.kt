@@ -179,7 +179,7 @@ fun LoginScreen(navController: NavController) {
 
 
                         TextButton(
-                            onClick = { /* TODO: Implementar recuperación de contraseña */ },
+                            onClick = { navController.navigate("registro") },
                             modifier = Modifier.align(Alignment.End)
                         ) {
                             Text(

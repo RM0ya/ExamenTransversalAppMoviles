@@ -6,6 +6,8 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Build
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -17,6 +19,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.pasteleriakotlin.R
+import com.example.pasteleriakotlin.ui.screen.MenuButton
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -154,7 +157,18 @@ fun AdminHomeScreen(navController: NavController) {
 
                 Spacer(modifier = Modifier.height(16.dp))
 
-
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = CardDefaults.cardColors(containerColor = Color(0xFFF5EAD3)),
+                    shape = RoundedCornerShape(12.dp)
+                ) {
+                }
+                MenuButton(
+                    text = "Pestaña Backend",
+                    backgroundColor = Color(0xFFAD812C),
+                    icon = Icons.Filled.Build,
+                    onClick = { navController.navigate("backendLogin") }
+                )
                 OutlinedButton(
                     onClick = { navController.navigate("products") },
                     colors = ButtonDefaults.outlinedButtonColors(

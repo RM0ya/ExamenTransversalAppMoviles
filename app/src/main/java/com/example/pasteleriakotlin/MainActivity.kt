@@ -54,12 +54,13 @@ class MainActivity : ComponentActivity() {
             NavHost(navController, startDestination = "splash") {
 
                 composable("backendLogin") {
-                    BackendLoginScreen()
+                    BackendLoginScreen(navController = navController)
                 }
 
                 composable("meals") {
                     MealsScreen()
                 }
+
                 composable("apiTest") {
                     ApiTestScreen()
                 }
